@@ -34,5 +34,7 @@ Header.propTypes = {
 
 /* Connexion au store, sans state ni dispatch clairement visible
 * Le fait d'utiliser connect() ici implique évidemment de devoir appeler le store
-* dans index.js */
+* dans index.js
+* En fait c'est ici qu'on indique que l'action creator addTodo doit retourner ses résultats au reducer,
+* qui met ensuite à jour le store */
 export default connect(null, { addTodo })(Header)
